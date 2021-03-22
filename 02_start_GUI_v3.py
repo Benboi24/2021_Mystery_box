@@ -32,7 +32,7 @@ class Start:
         self.mystery_instructions.grid(row=1)
 
         # Entry box, Button & Error label (row 2)
-        self.entry_error_frame = Entry(self.start_frame, width=200)
+        self.entry_error_frame = Frame(self.start_frame, width=200)
         self.entry_error_frame.grid(row=2)
 
         self.start_amount_entry = Entry(self.entry_error_frame,
@@ -45,14 +45,14 @@ class Start:
                                        command=self.check_funds)
         self.add_funds_button.grid(row=0, column=1)
 
-        self.amount_error_label = Label(self.entry_error_frame, fg="maroon",
+        self.amount_error_label = Label(self.start_frame, fg="maroon",
                                         text="", font="Arial 10 bold", wrap=275,
                                         justify=LEFT)
-        self.amount_error_label.grid(row=1, columnspan=2, pady=5)
+        self.amount_error_label.grid(row=3)
 
         # button frame (row 3)
         self.stakes_frame = Frame(self.start_frame)
-        self.stakes_frame.grid(row=3)
+        self.stakes_frame.grid(row=4)
 
         # Buttons go here...
         button_font = "Arial 12 bold"
@@ -82,7 +82,7 @@ class Start:
         # Help Button
         self.help_button = Button(self.start_frame, text="How to Play",
                                   bg="#808080", fg="white", font=button_font)
-        self.help_button.grid(row=4, pady=10)
+        self.help_button.grid(row=5, pady=10)
 
     def check_funds(self):
         starting_balance = self.start_amount_entry.get()
