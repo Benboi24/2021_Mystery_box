@@ -150,10 +150,20 @@ class Game:
         print(stakes)
         print(starting_balance)
 
-        # disable low stakes button
-        partner.lowstakes_button.config(state=DISABLED)
+        # initialise variables
+        self.balance = IntVar()
+
+        # Set starting balance to amount entered by user at start of game
+        self.balance.set(starting_balance)
 
         # GUI Setup
         self.game_box = Toplevel()
         self.game_frame = Frame(self.game_box)
         self.game_frame.grid()
+
+# main routine
+if __name__ == "__main__":
+    root = Tk()
+    root.title("Mystery Box Game")
+    something = Start(root)
+    root.mainloop()
