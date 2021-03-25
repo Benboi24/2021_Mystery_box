@@ -52,4 +52,54 @@ class Game:
 
         # Instructions Label
         self.instructions_label = Label(self.game_frame, wrap=300, justify=LEFT,
-                                        text="Press <enter> or click")
+                                        text="Press <enter> or click the 'Open "
+                                             "Boxes' button to reveal the "
+                                             "contents of teh mystery boxes. ",
+                                        font="Arial 10", padx=10, pady=10)
+        self.instructions_label.grid(row=1)
+
+        # Boxes go here (row 2)
+        box_text = "Arial 16 bold"
+        box_back = "#b9ea96"    # light green
+        box_width = 5
+        self.box_frame = Frame(self.game_frame)
+        self.box_frame.grid(row=2, pady=10)
+
+        self.prize1_label = Label(self.box_frame, text="?\n", font=box_text,
+                                  bg=box_back, width=box_width, padx=10, pady=10)
+        self.prize1_label.grid(row=0, column=0)
+
+        self.prize2_label = Label(self.box_frame, text="?\n", font=box_text,
+                                  bg=box_back, width=box_width, padx=10, pady=10)
+        self.prize2_label.grid(row=0, column=1, padx=10)
+
+        self.prize3_label = Label(self.box_frame, text="?\n", font=box_text,
+                                  bg=box_back, width=box_width, padx=10, pady=10)
+        self.prize3_label.grid(row=0, column=2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
