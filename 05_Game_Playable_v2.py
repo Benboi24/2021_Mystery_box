@@ -103,12 +103,17 @@ class Game:
         self.help_button.grid(row=0, column=0, padx=2)
 
         self.stats_button = Button(self.help_export_frame, text="Game Stats...",
-                                   font="Arial 15 bold",
-                                   bg="#003366", fg="white")
+                                   font="Arial 15 bold", bg="#003366", fg="white")
         self.stats_button.grid(row=0, column=1, padx=2)
 
+        # Quit Button
+        self.quit_button = Button(self.game_frame, text="Quit", fg="white",
+                                  bg="#660000", font="Arial 15 bold", width=20,
+                                  command=self.to_quit, padx=10, pady=10)
+        self.quit_button.grid(row=6, pady=10)
+
     def reveal_boxes(self):
-        # retrieve the balance from the initial function..'
+        # retrieve the balance from the initial function...
         current_balance = self.balance.get()
         stakes_multiplier = self.multiplier.get()
 
@@ -137,10 +142,12 @@ class Game:
             prizes.append(prize)
             backgrounds.append(back_color)
 
-        # Display prizes..
-        self.prize1_label.config(text=prizes[0])
-        self.prize2_label.config(text=prizes[1])
-        self.prize3_label.config(text=prizes[2])
+        # Display prizes & edit background...
+        self.prize1_label.config(text=prizes[0], bg=backgrounds[0])
+
+        self.prize2_label.config(text=prizes[1], bg=backgrounds[1])
+
+        self.prize3_label.config(text=prizes[2], bg=backgrounds[2])
 
         # Deduct cost of game
         current_balance -= 5 * stakes_multiplier
@@ -159,7 +166,14 @@ class Game:
         # Edit label so user can see their balance
         self.balance_label.configure(text=balance_statement)
 
+        if current_balance < 5 * stakes_multiplier:
+            self.play_button.config(state=DISABLED)
+            self.game_box.focus()
+            self.play_button.configure(text="Game Over")
 
+            balance_statement = "Current Balance: ${}\n" \
+                                "Your balance is too low. You can only quit " \
+                                "or view your stats. "
 # main routine
 if __name__ == "__main__":
     root = Tk()
