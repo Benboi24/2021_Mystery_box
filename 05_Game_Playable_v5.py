@@ -33,7 +33,7 @@ class Game:
         print(stakes)
         print(starting_balance)
 
-        # initialise variables
+        # **** initialise variables *******
         self.balance = IntVar()
         # Set balance to amount entered by user at start of game
         self.balance.set(starting_balance)
@@ -41,6 +41,9 @@ class Game:
         # Get value of stakes (use it as a multiplier when calculating winnings)
         self.multiplier = IntVar()
         self.multiplier.set(stakes)
+
+        # List for holding statistics
+        self.round_stats_list = []
 
         # GUI Setup
         self.game_box = Toplevel()
@@ -66,7 +69,7 @@ class Game:
         self.instructions_label.grid(row=1)
 
         # Boxes go here (row 2)
-        
+
 
         self.box_frame = Frame(self.game_frame)
         self.box_frame.grid(row=2, pady=10)
@@ -128,42 +131,46 @@ class Game:
                                   command=self.to_quit, padx=10, pady=10)
         self.quit_button.grid(row=6, pady=10)
 
-    def reveal_boxes(self):
+    def reveal_boxes(self, stats_prizes):
         # retrieve the balance from the initial function...
         current_balance = self.balance.get()
         stakes_multiplier = self.multiplier.get()
 
         round_winnings = 0
         prizes = []
-        backgrounds = []
         for item in range(0, 3):
             prize_num = random.randint(1, 100)
 
             if 0 < prize_num <= 5:
-                prize = "gold\n(${})".format(5 * stakes_multiplier)
-                back_color = "#CEA935"  # Gold colour
+                prize = PhotoImage(file="gold.gif")
+                prize_list = "gold (${})".format(5 * stakes_multiplier)
                 round_winnings += 5 * stakes_multiplier
             elif 5 < prize_num <= 25:
-                prize = "silver\n(${})".format(2 * stakes_multiplier)
-                back_color = "#B7B7B5"  # Silver Colour
+                prize = PhotoImage(file="silver.gif")
+                prize_list = "silver (${})".format(2 * stakes_multiplier)
                 round_winnings += 2 * stakes_multiplier
             elif 25 < prize_num <= 65:
-                prize = "copper\n(${})".format(1 * stakes_multiplier)
-                back_color = "#BC7F61"  # copper colour
+                prize = PhotoImage(file="copper.gif")
+                prize_list = "copper (${})".format(1 * stakes_multiplier)
                 round_winnings += stakes_multiplier
             else:
-                prize = "lead\n($0)"
-                back_color = "#595371"  # lead colour
+                prize = PhotoImage(file="lead.gif")
+                prize_list = "lead ($0)"
 
             prizes.append(prize)
-            backgrounds.append(back_color)
+            stats_prizes.append(prize_list)
+
+        photo1 = prizes[0]
+        photo2 = prizes[1]
+        photo3 = prizes[2]
 
         # Display prizes & edit background...
-        self.prize1_label.config(text=prizes[0], bg=backgrounds[0])
-
-        self.prize2_label.config(text=prizes[1], bg=backgrounds[1])
-
-        self.prize3_label.config(text=prizes[2], bg=backgrounds[2])
+        self.prize1_label.config(image=photo1)
+        self.prize1_label.photo = photo1
+        self.prize2_label.config(image=photo2)
+        self.prize2_label.photo = photo2
+        self.prize3_label.config(image=photo3)
+        self.prize3_label.photo = photo3
 
         # Deduct cost of game
         current_balance -= 5 * stakes_multiplier
@@ -178,6 +185,16 @@ class Game:
                             "Current Balance: ${}".format(5 * stakes_multiplier,
                                                           round_winnings,
                                                           current_balance)
+
+        # Add round results to statistics list
+        round_summary = "{} | {} | {} - Cost: ${} | " \
+                        "Payback: ${} | Current Balance: " \
+                        "${}".format(stats_prizes[0], stats_prizes[1],
+                                     stats_prizes[2],
+                                     5 * stakes_multiplier,round_winnings,
+                                     current_balance)
+        self.round_stats_list.append(round_summary)
+        print(self.round_stats_list)
 
         # Edit label so user can see their balance
         self.balance_label.configure(text=balance_statement)
