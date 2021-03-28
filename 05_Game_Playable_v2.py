@@ -173,7 +173,13 @@ class Game:
 
             balance_statement = "Current Balance: ${}\n" \
                                 "Your balance is too low. You can only quit " \
-                                "or view your stats. "
+                                "or view your stats. Sorry about that.".format(current_balance)
+            self.balance_label.config(fg="660000", font="Arial 10 bold",
+                                      text=balance_statement)
+
+    def to_quit(self):
+        root.destroy()
+
 # main routine
 if __name__ == "__main__":
     root = Tk()
