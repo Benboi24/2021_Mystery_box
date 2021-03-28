@@ -22,7 +22,7 @@ class Start:
         Game(self, stakes, starting_balance)
 
         # hide start up window
-        root.withdraw()
+        self.start_frame.destroy()
 
 
 class Game:
@@ -41,6 +41,10 @@ class Game:
 
         # GUI Setup
         self.game_box = Toplevel()
+
+        # If users press cross at top, game quits
+        self.game_box.protocol("WN_DELETE_WINDOW", self.to_quit)
+
         self.game_frame = Frame(self.game_box)
         self.game_frame.grid()
 
@@ -81,6 +85,11 @@ class Game:
         self.play_button = Button(self.game_frame, text="Open Boxes",
                                   bg="#FFFF33", font="Arial 15 bold", width=20,
                                   padx=10, pady=10, command=self.reveal_boxes)
+
+        # bind buttons to <enter> (users can push enter to reveal the boxes)
+
+        self.play_button.focus()
+        self.play_button.bind('<Return>', lambda e: self.reveal_boxes())
         self.play_button.grid(row=3)
 
         # Balance Label (row 4)
@@ -174,7 +183,7 @@ class Game:
             balance_statement = "Current Balance: ${}\n" \
                                 "Your balance is too low. You can only quit " \
                                 "or view your stats. Sorry about that.".format(current_balance)
-            self.balance_label.config(fg="660000", font="Arial 10 bold",
+            self.balance_label.config(fg="#660000", font="Arial 10 bold",
                                       text=balance_statement)
 
     def to_quit(self):
