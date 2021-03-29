@@ -176,7 +176,7 @@ class Game:
         self.instructions_label = Label(self.game_frame, wrap=300, justify=LEFT,
                                         text="Press <enter> or click the 'Open "
                                              "Boxes' button to reveal the "
-                                             "contents of teh mystery boxes. ",
+                                             "contents of the mystery boxes. ",
                                         font="Arial 10", padx=10, pady=10)
         self.instructions_label.grid(row=1)
 
@@ -242,26 +242,27 @@ class Game:
                                   command=self.to_quit, padx=10, pady=10)
         self.quit_button.grid(row=6, pady=10)
 
-    def reveal_boxes(self, stats_prizes):
+    def reveal_boxes(self):
         # retrieve the balance from the initial function...
         current_balance = self.balance.get()
         stakes_multiplier = self.multiplier.get()
 
         round_winnings = 0
         prizes = []
+        stats_prizes = []
         for item in range(0, 3):
             prize_num = random.randint(1, 100)
 
             if 0 < prize_num <= 5:
-                prize = PhotoImage(file="gold.gif")
+                prize = PhotoImage(file="gold_low.gif")
                 prize_list = "gold (${})".format(5 * stakes_multiplier)
                 round_winnings += 5 * stakes_multiplier
             elif 5 < prize_num <= 25:
-                prize = PhotoImage(file="silver.gif")
+                prize = PhotoImage(file="silver_low.gif")
                 prize_list = "silver (${})".format(2 * stakes_multiplier)
                 round_winnings += 2 * stakes_multiplier
             elif 25 < prize_num <= 65:
-                prize = PhotoImage(file="copper.gif")
+                prize = PhotoImage(file="copper_low.gif")
                 prize_list = "copper (${})".format(1 * stakes_multiplier)
                 round_winnings += stakes_multiplier
             else:

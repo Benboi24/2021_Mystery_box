@@ -142,7 +142,7 @@ class Start:
         Game(self, stakes, starting_balance)
 
         # hide start up window
-        root.withdraw()
+        # root.withdraw()
 
 
 class Game:
@@ -151,12 +151,14 @@ class Game:
         print(starting_balance)
 
         # disable low stakes button
-        partner.lowstakes_button.config(state=DISABLED)
+        partner.low_stakes_button.config(state=DISABLED)
 
         # GUI Setup
         self.game_box = Toplevel()
         self.game_frame = Frame(self.game_box)
         self.game_frame.grid()
+
+
 # main routine
 if __name__ == "__main__":
     root = Tk()
