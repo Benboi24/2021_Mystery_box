@@ -62,6 +62,15 @@ class Help:
                   "they contained copper, silver and gold, you would receive " \
                   "$13 ($1 + $2 + $10) and so on."
 
+        # Help text (label, row 1)
+        self.help_text = Label(self.help_frame, text=help_text,
+                               justify=LEFT, wrap=400, padx=10, pady=10)
+        self.help_text.grid(row=1)
+
+        # Dismiss Button (row 2)
+        self.dismiss_btn = Button(self.help_frame, text="Dismiss",
+                                  width=10, bg="#660000", fg="white",
+                                  font="arial 15 bold")
 
 # main routine
 if __name__ == "__main__":
