@@ -107,11 +107,27 @@ class GameStats:
             amount = game_stats[0] - game_stats[1]
             win_loss_fg = "#660000"
 
-        # Amount won / lost (row 2,3)
+        # Amount won / lost (row 2.3)
         self.wind_loss_label = Label(self.details_frame,
                                      text=win_loss, font=heading,
                                      anchor="e")
         self.wind_loss_label.grid(row=2, column=0, padx=0)
+
+        self.wind_loss_value_label = Label(self.details_frame, font=content,
+                                           text="${}".format(amount),
+                                           fg=win_loss_fg, anchor="w")
+        self.wind_loss_value_label.grid(row=2, column=1, padx=0)
+
+        # Rounds Played (row 2.4)
+        self.games_played_label = Label(self.details_frame,
+                                        text="Rounds Played", font=heading,
+                                        anchor="e")
+        self.games_played_label.grid(row=4, column=0, padx=0)
+
+        self.games_played_value_label = Label(self.details_frame, font=content,
+                                              text=len(game_history),
+                                              anchor="w")
+        self.games_played_value_label.grid(row=4, column=1, padx=0)
 
 
 
