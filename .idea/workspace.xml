@@ -23,26 +23,11 @@
       <file leaf-file-name="08_Game_Export_GUI_v2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/08_Game_Export_GUI_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="369" column="48" selection-start-line="369" selection-start-column="48" selection-end-line="369" selection-end-column="48" />
+            <state relative-caret-position="433">
+              <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
               <folding>
                 <element signature="e#149#8235#0" expanded="false" />
                 <element signature="e#8259#12532#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AA_compiled_game_v4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AA_compiled_game_v4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="493" column="0" selection-start-line="493" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
-              <folding>
-                <element signature="e#118#5859#0" expanded="false" />
-                <element signature="e#5878#13964#0" expanded="false" />
-                <element signature="e#13983#16234#0" expanded="false" />
-                <element signature="e#16273#20548#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,8 +59,8 @@
         <option value="$PROJECT_DIR$/05_Game_Playable_v5.py" />
         <option value="$PROJECT_DIR$/AA_complied_game_demo.py" />
         <option value="$PROJECT_DIR$/06_Help_GUI_v1.py" />
-        <option value="$PROJECT_DIR$/AA_compiled_game_v4.py" />
         <option value="$PROJECT_DIR$/07_Game_Stats_GUI_v1.py" />
+        <option value="$PROJECT_DIR$/AA_compiled_game_v4.py" />
         <option value="$PROJECT_DIR$/08_Game_Export_GUI_v2.py" />
       </list>
     </option>
@@ -434,12 +419,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#118#5859#0" expanded="false" />
-            <element signature="e#5878#13964#0" expanded="false" />
-            <element signature="e#13983#16234#0" expanded="false" />
-            <element signature="e#16273#20548#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -477,6 +457,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,6 +481,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_Game_Playable_v5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01_Mystery_skeleton_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="807">
@@ -718,37 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AA_complied_game_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/05_Game_Playable_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2558">
           <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AA_complied_game_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AA_compiled_game_v4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="493" column="0" selection-start-line="493" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
-          <folding>
-            <element signature="e#118#5859#0" expanded="false" />
-            <element signature="e#5878#13964#0" expanded="false" />
-            <element signature="e#13983#16234#0" expanded="false" />
-            <element signature="e#16273#20548#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,10 +727,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/05_Game_Playable_v5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AA_complied_game_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+          <folding>
+            <element signature="e#116#5857#0" expanded="false" />
+            <element signature="e#5876#13734#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AA_compiled_game_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AA_complied_game_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1589">
+          <caret line="158" column="30" selection-start-line="158" selection-start-column="30" selection-end-line="158" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/08_Game_Export_GUI_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="369" column="48" selection-start-line="369" selection-start-column="48" selection-end-line="369" selection-end-column="48" />
+        <state relative-caret-position="433">
+          <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
           <folding>
             <element signature="e#149#8235#0" expanded="false" />
             <element signature="e#8259#12532#0" expanded="false" />

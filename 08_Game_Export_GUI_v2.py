@@ -371,6 +371,61 @@ class Export:
 
     def save_history(self, partner, game_history, game_stats):
 
+        # Regular expression to check filename is valid
+        valid_char = "[A-Za-z-0-9_]"
+        has_errors = "no"
+
+        filename = self.filename_entry.get()
+        print(filename)
+
+        for letter in filename:
+            if re.match(valid_char, letter):
+                continue
+
+            elif letter == "":
+                problem = "(no spaces allowed)"
+
+            else:
+                problem = ("(no {}'s allowed)".format(letter))
+            has_errors = "yes"
+            break
+
+        if filename == "":
+            problem = "can't be blank"
+            has_errors = "yes"
+
+        if has_errors == "yes":
+            # Display error message
+            self.save_error_label.config(text="Invalid filename - {}".format(problem))
+            # Change entry box background to pink
+            self.filename_entry.config(bg="#ffafaf")
+            print()
+
+        else:
+            # If there are no errors, generate text file and then close dialouge
+            # add .txt suffix!
+            filename = filename + ".txt"
+
+            # create file to hold data
+            f = open(filename, "w+")
+
+            # Heading for Stats
+            f.write("Game Statistics\n\n")
+
+            # Game Stats
+            for round in game_stats:
+                f.write(round + "\n")
+
+            # Heading for Rounds
+            f.write("\nRound Details\n\n")
+
+            # add new line at end of each item
+            for item in game_history:
+                f.write(item + "\n")
+
+            # close file
+            f.close()
+
 
 # main routine
 if __name__ == "__main__":
