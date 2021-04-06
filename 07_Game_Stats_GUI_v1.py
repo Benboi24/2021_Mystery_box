@@ -130,15 +130,11 @@ class GameStats:
         self.games_played_value_label.grid(row=4, column=1, padx=0)
 
 
-
-
-
-
 # main routine
 if __name__ == "__main__":
     root = Tk()
     root.title("Mystery Box Game")
-    something = Start(root)
+    something = Game()
     root.mainloop()
 
 

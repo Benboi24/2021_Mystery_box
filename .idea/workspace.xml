@@ -20,39 +20,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="06_Help_GUI_v1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06_Help_GUI_v1.py">
+      <file leaf-file-name="08_Game_Export_GUI_v2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/08_Game_Export_GUI_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="382">
+              <caret line="369" column="48" selection-start-line="369" selection-start-column="48" selection-end-line="369" selection-end-column="48" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#149#8235#0" expanded="false" />
+                <element signature="e#8259#12532#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="07_Game_Stats_GUI_v1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/07_Game_Stats_GUI_v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-              <folding>
-                <element signature="e#117#1124#0" expanded="false" />
-                <element signature="e#1148#5428#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AA_compiled_game_v4.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AA_compiled_game_v4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AA_compiled_game_v4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="302" column="36" selection-start-line="302" selection-start-column="36" selection-end-line="302" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="493" column="0" selection-start-line="493" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
                 <element signature="e#118#5859#0" expanded="false" />
+                <element signature="e#5878#13964#0" expanded="false" />
                 <element signature="e#13983#16234#0" expanded="false" />
                 <element signature="e#16273#20548#0" expanded="false" />
               </folding>
@@ -86,8 +74,9 @@
         <option value="$PROJECT_DIR$/05_Game_Playable_v5.py" />
         <option value="$PROJECT_DIR$/AA_complied_game_demo.py" />
         <option value="$PROJECT_DIR$/06_Help_GUI_v1.py" />
-        <option value="$PROJECT_DIR$/07_Game_Stats_GUI_v1.py" />
         <option value="$PROJECT_DIR$/AA_compiled_game_v4.py" />
+        <option value="$PROJECT_DIR$/07_Game_Stats_GUI_v1.py" />
+        <option value="$PROJECT_DIR$/08_Game_Export_GUI_v2.py" />
       </list>
     </option>
   </component>
@@ -127,24 +116,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.07_Game_Stats_GUI_v1">
-    <configuration default="false" name="05_Game_Playable_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="2021_Mystery_box" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_Game_Playable_v2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.AA_compiled_game_v4">
     <configuration default="false" name="05_Game_Playable_v5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,6 +181,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="2021_Mystery_box" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07_Game_Stats_GUI_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AA_compiled_game_v4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="2021_Mystery_box" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AA_compiled_game_v4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -348,19 +337,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.05_Game_Playable_v2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.05_Game_Playable_v5" />
-      <item index="2" class="java.lang.String" itemvalue="Python.AA_complied_game_demo" />
-      <item index="3" class="java.lang.String" itemvalue="Python.06_Help_GUI_v1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.07_Game_Stats_GUI_v1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.05_Game_Playable_v5" />
+      <item index="1" class="java.lang.String" itemvalue="Python.AA_complied_game_demo" />
+      <item index="2" class="java.lang.String" itemvalue="Python.06_Help_GUI_v1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.07_Game_Stats_GUI_v1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.AA_compiled_game_v4" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.07_Game_Stats_GUI_v1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.AA_complied_game_demo" />
-        <item index="2" class="java.lang.String" itemvalue="Python.06_Help_GUI_v1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.05_Game_Playable_v5" />
-        <item index="4" class="java.lang.String" itemvalue="Python.05_Game_Playable_v2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.AA_compiled_game_v4" />
+        <item index="1" class="java.lang.String" itemvalue="Python.07_Game_Stats_GUI_v1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.AA_complied_game_demo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.06_Help_GUI_v1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.05_Game_Playable_v5" />
       </list>
     </recent_temporary>
   </component>
@@ -386,18 +375,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32657418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32657418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -424,6 +413,8 @@
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#116#748#0" expanded="false" />
+            <element signature="e#767#3020#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -434,7 +425,7 @@
           <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding>
             <element signature="e#117#1124#0" expanded="false" />
-            <element signature="e#1148#5428#0" expanded="false" />
+            <element signature="e#1148#5424#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -444,8 +435,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
             <element signature="e#118#5859#0" expanded="false" />
+            <element signature="e#5878#13964#0" expanded="false" />
             <element signature="e#13983#16234#0" expanded="false" />
             <element signature="e#16273#20548#0" expanded="false" />
           </folding>
@@ -458,6 +449,8 @@
           <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#116#748#0" expanded="false" />
+            <element signature="e#767#3020#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -468,7 +461,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#117#1124#0" expanded="false" />
-            <element signature="e#1148#5428#0" expanded="false" />
+            <element signature="e#1148#5424#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -746,36 +739,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06_Help_GUI_v1.py">
+    <entry file="file://$PROJECT_DIR$/AA_compiled_game_v4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="493" column="0" selection-start-line="493" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#118#5859#0" expanded="false" />
+            <element signature="e#5878#13964#0" expanded="false" />
+            <element signature="e#13983#16234#0" expanded="false" />
+            <element signature="e#16273#20548#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/07_Game_Stats_GUI_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="136" column="22" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
           <folding>
             <element signature="e#117#1124#0" expanded="false" />
-            <element signature="e#1148#5428#0" expanded="false" />
+            <element signature="e#1148#5424#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AA_compiled_game_v4.py">
+    <entry file="file://$PROJECT_DIR$/06_Help_GUI_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="302" column="36" selection-start-line="302" selection-start-column="36" selection-end-line="302" selection-end-column="36" />
+        <state relative-caret-position="153">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#118#5859#0" expanded="false" />
-            <element signature="e#13983#16234#0" expanded="false" />
-            <element signature="e#16273#20548#0" expanded="false" />
+            <element signature="e#116#748#0" expanded="false" />
+            <element signature="e#767#3020#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08_Game_Export_GUI_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="369" column="48" selection-start-line="369" selection-start-column="48" selection-end-line="369" selection-end-column="48" />
+          <folding>
+            <element signature="e#149#8235#0" expanded="false" />
+            <element signature="e#8259#12532#0" expanded="false" />
           </folding>
         </state>
       </provider>
