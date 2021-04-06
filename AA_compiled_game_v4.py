@@ -3,6 +3,7 @@ from functools import partial   # To prevent unwanted windows
 
 import random
 
+
 class Start:
     def __init__(self, parent):
 
@@ -156,6 +157,7 @@ class Game:
 
         # List for holding statistics
         self.round_stats_list = []
+        self.game_stats_list=[starting_balance, starting_balance]
 
         # GUI Setup
         self.game_box = Toplevel()
@@ -300,6 +302,9 @@ class Game:
 
         # Set balance to new balance
         self.balance.set(current_balance)
+        # update game_stats_list with current balance (replace item in
+        # position 1 with current balance)
+        self.game_stats_list[1] = current_balance
 
         balance_statement = "Game Cost: ${}\nPayback: ${} \n" \
                             "Current Balance: ${}".format(5 * stakes_multiplier,
