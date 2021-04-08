@@ -235,7 +235,8 @@ class Game:
         self.help_button.grid(row=0, column=0, padx=2)
 
         self.stats_button = Button(self.help_export_frame, text="Game Stats...",
-                                   font="Arial 15 bold", bg="#003366", fg="white")
+                                   font="Arial 15 bold", bg="#003366", fg="white",
+                                   command=lambda: self.stats(self.round_stats_list, self.game_stats_list))
         self.stats_button.grid(row=0, column=1, padx=2)
 
         # Quit Button
@@ -334,6 +335,9 @@ class Game:
                                 "or view your stats. Sorry about that.".format(current_balance)
             self.balance_label.config(fg="#660000", font="Arial 10 bold",
                                       text=balance_statement)
+
+    def stats(self, game_history, game_stats):
+        GameStats(self, game_history, game_stats)
 
     def to_quit(self):
         root.destroy()
@@ -483,6 +487,32 @@ class GameStats:
                                               text=len(game_history),
                                               anchor="w")
         self.games_played_value_label.grid(row=4, column=1, padx=0)
+
+        # Export / Dismiss Buttons Frame(row 3)
+        self.export_dismiss_frame = Frame(self.export_dismiss_frame)
+        self.export_dismiss_frame.grid(row=3, pady=10)
+
+        # Export Button
+        self.export_button = Button(self.export_dismiss_frame, text="Export",
+                                    font="Arial 12 bold",
+                                    command=lambda: self.export(game_history))
+        self.export_button.grid(row=0, column=0)
+
+        # Dismiss Button
+        self.dismiss_button = Button(self.export_dismiss_frame, text="Dismiss",
+                                     font="Arial 12 bold",
+                                     command=partial(self.close_stats, partner))
+        self.dismiss_button.grid(row=0, column=1)
+
+
+
+
+
+
+
+    def close_stats(self, partner):
+        partner.stats_button.config(state=NORMAL)
+        self.stats_box.destroy()
 
 # main routine
 if __name__ == "__main__":
