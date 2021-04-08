@@ -489,7 +489,7 @@ class GameStats:
         self.games_played_value_label.grid(row=4, column=1, padx=0)
 
         # Export / Dismiss Buttons Frame(row 3)
-        self.export_dismiss_frame = Frame(self.export_dismiss_frame)
+        self.export_dismiss_frame = Frame(self.export_button)
         self.export_dismiss_frame.grid(row=3, pady=10)
 
         # Export Button
@@ -503,12 +503,6 @@ class GameStats:
                                      font="Arial 12 bold",
                                      command=partial(self.close_stats, partner))
         self.dismiss_button.grid(row=0, column=1)
-
-
-
-
-
-
 
     def close_stats(self, partner):
         partner.stats_button.config(state=NORMAL)
