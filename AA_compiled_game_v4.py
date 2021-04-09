@@ -157,7 +157,7 @@ class Game:
 
         # List for holding statistics
         self.round_stats_list = []
-        self.game_stats_list=[starting_balance, starting_balance]
+        self.game_stats_list = [starting_balance, starting_balance]
 
         # GUI Setup
         self.game_box = Toplevel()
@@ -317,7 +317,7 @@ class Game:
                         "Payback: ${} | Current Balance: " \
                         "${}".format(stats_prizes[0], stats_prizes[1],
                                      stats_prizes[2],
-                                     5 * stakes_multiplier,round_winnings,
+                                     5 * stakes_multiplier, round_winnings,
                                      current_balance)
         self.round_stats_list.append(round_summary)
         print(self.round_stats_list)
@@ -511,9 +511,9 @@ class GameStats:
     def export(self, game_history, game_stats):
         Export(self, game_history, game_stats)
 
+
 class Export:
     def __init__(self, partner, game_history, game_stats):
-
 
         self.filename_entry = None
         self.history_frame = None
@@ -620,7 +620,7 @@ class Export:
             print()
 
         else:
-            # If there are no errors, generate text file and then close dialouge
+            # If there are no errors, generate text file and then close dialogue
             # add .txt suffix!
             filename = filename + ".txt"
 
@@ -638,11 +638,13 @@ class Export:
             if game_stats[1] > game_stats[0]:
                 win_loss = "Amount Won:"
                 amount = game_stats[1] - game_stats[0]
-                win_loss_fg = "#green"
+
             else:
                 win_loss = "Amount Lost:"
                 amount = game_stats[0] - game_stats[1]
-                win_loss_fg = "#660000"
+
+            win_loss_statement = "{} ${:.2f} \n".format(win_loss, amount)
+            f.write(win_loss_statement)
 
             # add new line  at end of each item
             for item in game_history:
