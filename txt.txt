@@ -1,8 +1,7 @@
 Mystery Box Rounds
 
 Starting Balance: $50 
-Current Balance: $22 
-copper ($2) | lead ($0) | lead ($0) - Cost: $10 | Payback: $2 | Current Balance: $42
-copper ($2) | lead ($0) | copper ($2) - Cost: $10 | Payback: $4 | Current Balance: $36
-lead ($0) | copper ($2) | lead ($0) - Cost: $10 | Payback: $2 | Current Balance: $28
-lead ($0) | copper ($2) | copper ($2) - Cost: $10 | Payback: $4 | Current Balance: $22
+Current Balance: $32 
+copper ($2) | copper ($2) | lead ($0) - Cost: $10 | Payback: $4 | Current Balance: $44
+lead ($0) | copper ($2) | copper ($2) - Cost: $10 | Payback: $4 | Current Balance: $38
+lead ($0) | copper ($2) | copper ($2) - Cost: $10 | Payback: $4 | Current Balance: $32
